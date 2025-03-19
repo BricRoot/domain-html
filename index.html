@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <link rel="icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BricRoot的域名</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            color: #333;
+            text-align: center;
+            padding: 50px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1, p {
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #0073e6;
+            margin-bottom: 20px;
+            animation-delay: 0s;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            animation-delay: 0.5s;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            animation: scaleUp 1.5s ease-in-out;
+        }
+
+        .footer {
+            font-size: 14px;
+            color: #777;
+            margin-top: 30px;
+        }
+
+        .footer a {
+            color: #0073e6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes scaleUp {
+            0% {
+                transform: scale(0.8);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>该域名归属于BricRoot</h1>
+        <p>您正在访问的域名所有权归BricRoot所有
+        <br>
+        若有任何问题，请联系我的电子邮箱<a href="mailto:my@bricawa.cn">my@bricawa.cn</a></p>
+        <p>© <span id="year">加载年份...</span> BricRoot 版权所有</p>
+    </div>
+    <script>
+        const year = new Date().getFullYear();
+        document.getElementById('year').textContent = year;
+    </script>
+    
+</body>
+</html>
